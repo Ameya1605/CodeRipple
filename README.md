@@ -1,4 +1,4 @@
-# Dependency Impact Analyzer (v2.0 Production Platform)
+# CodeRipple(Dependency Impact Analyzer) (v2.0 Production Platform)
 
 A highly accurate, multi-model, RAG-powered static analysis platform designed to assess the blast radius, contract changes, and downstream risks of codebase modifications. It leverages hybrid retrieval (Vector/Graph), precise AST parsing, and advanced LLM reasoning to ensure robust change safety.
 
