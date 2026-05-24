@@ -1,0 +1,8 @@
+#!/bin/bash
+cd "$(git rev-parse --show-toplevel)"
+changed_files=$(git diff HEAD~1 HEAD --name-only -- '*.py')
+if [ -n "$changed_files" ]; then
+    echo "Re-indexing Python files..."
+    # Fallback to full re-index for now. In Phase 9/10 we could optimize to incremental.
+    python scripts/index.py --repo .
+fi

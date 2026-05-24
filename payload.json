@@ -1,0 +1,16 @@
+{
+  "chunk": {
+    "chunk_id": "1",
+    "repo_id": "test",
+    "file_path": "test.py",
+    "symbol_type": "func",
+    "symbol_name": "test",
+    "qualified_name": "test",
+    "start_line": 1,
+    "end_line": 2,
+    "signature": "test()",
+    "content": "pass",
+    "language": "python"
+  },
+  "change_summary": "test"
+}

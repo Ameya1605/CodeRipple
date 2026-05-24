@@ -1,0 +1,11 @@
+# repos.yaml
+repos:
+  - id: core-api
+    path: ./core-api
+    language: python
+  - id: web-frontend
+    path: ./frontend
+    language: typescript
+  - id: payment-service
+    path: ./payment-service
+    language: go

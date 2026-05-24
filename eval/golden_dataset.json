@@ -1,0 +1,9 @@
+[
+  {
+    "changed_qualified_name": "tests.fixtures.sample_graph.func_a",
+    "change_description": "Modified signature of func_a",
+    "true_dependents": ["tests.fixtures.sample_graph.func_b", "tests.fixtures.sample_graph.func_c"],
+    "actual_risk_tier": "HIGH",
+    "tests_caught_it": false
+  }
+]

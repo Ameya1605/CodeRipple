@@ -1,0 +1,123 @@
+version: '3.8'
+
+services:
+  qdrant:
+    image: qdrant/qdrant:v1.9.0
+    ports:
+      - "6333:6333"
+    volumes:
+      - qdrant_data:/qdrant/storage
+
+  neo4j:
+    image: neo4j:5.18
+    ports:
+      - "7474:7474"
+      - "7687:7687"
+    environment:
+      - NEO4J_AUTH=neo4j/devpassword
+      - NEO4J_apoc_export_file_enabled=true
+      - NEO4J_apoc_import_file_enabled=true
+      - NEO4J_apoc_import_file_use__neo4j__config=true
+      # Fix #13: Ensure APOC is installed on startup
+      - NEO4J_PLUGINS=["apoc"]
+    volumes:
+      - neo4j_data:/data
+
+  redis:
+    image: redis:7-alpine
+    # Fix #2, F-5: Ensure Redis is accessible to the host for native FastAPI development
+    ports:
+      - "6379:6379"
+
+  postgres:
+    image: postgres:15-alpine
+    environment:
+      - POSTGRES_USER=dep_impact
+      - POSTGRES_PASSWORD=devpassword
+      - POSTGRES_DB=dep_impact
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  backend:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    ports:
+      - "8080:8000"
+    env_file:
+      - .env
+    environment:
+      - ENVIRONMENT=development
+      - QDRANT_URL=http://qdrant:6333
+      - NEO4J_URI=bolt://neo4j:7687
+      - REDIS_URL=redis://redis:6379/0
+      - CELERY_BROKER_URL=redis://redis:6379/0
+      - CELERY_RESULT_BACKEND=redis://redis:6379/0
+    volumes:
+      - ./backend:/app/backend
+    depends_on:
+      - qdrant
+      - neo4j
+      - redis
+
+  celery:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    command: celery -A backend.jobs.celery_app worker --loglevel=info --concurrency=4
+    env_file:
+      - .env
+    environment:
+      - ENVIRONMENT=development
+      - QDRANT_URL=http://qdrant:6333
+      - NEO4J_URI=bolt://neo4j:7687
+      - REDIS_URL=redis://redis:6379/0
+      - CELERY_BROKER_URL=redis://redis:6379/0
+      - CELERY_RESULT_BACKEND=redis://redis:6379/0
+    volumes:
+      - ./backend:/app/backend
+    depends_on:
+      - redis
+      - backend
+
+  flower:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    command: celery -A backend.jobs.celery_app flower --port=5555
+    ports:
+      - "5555:5555"
+    env_file:
+      - .env
+    environment:
+      - REDIS_URL=redis://redis:6379/0
+    depends_on:
+      - celery
+      - redis
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    # Fix #16: Map Nginx container's port 80 to host 3000
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend
+
+  ollama:
+    image: ollama/ollama:latest
+    ports:
+      - "11434:11434"
+    volumes:
+      - ollama_data:/root/.ollama
+    environment:
+      - OLLAMA_KEEP_ALIVE=24h
+
+volumes:
+  qdrant_data:
+  neo4j_data:
+  postgres_data:
+  ollama_data:
