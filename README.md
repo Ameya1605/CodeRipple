@@ -42,7 +42,7 @@ docker-compose up --build -d
 ## How to Use the Platform
 
 ### Option A: Interactive Web Dashboard
-1. Navigate to **[http://localhost:5173/dashboard](http://localhost:5173/dashboard)**.
+1. Navigate to **[http://localhost:5173/dashboard](http://localhost:3000/dashboard)**.
 2. Enter the target symbol or function name (e.g., `calculate_impact`) in the top search bar.
 3. Click **Analyze Impact** to trigger live reasoning over WebSockets. Watch the real-time stream update the reasoning engine, extract recommended test coverage gaps, and dynamically adjust risk distributions.
 
