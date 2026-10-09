@@ -1,0 +1,346 @@
+{
+  "version": "2.0",
+  "project": {
+    "name": "CodeRipple",
+    "repo_url": "Ameya1605/CodeRipple",
+    "project_type": "saas",
+    "is_ai_enabled": true
+  },
+  "structure": "monorepo",
+  "apps": [
+    "api",
+    "web"
+  ],
+  "enums": [],
+  "relations": [],
+  "database": [],
+  "endpoints": [
+    {
+      "method": "POST",
+      "route": "/api/v1/analyze/symbol",
+      "linked_table": null,
+      "auth_required": true,
+      "auth_type": "bearer",
+      "roles": [],
+      "request_schema": {},
+      "response_schema": {},
+      "code": null
+    },
+    {
+      "method": "POST",
+      "route": "/api/v1/analyze/diff",
+      "linked_table": null,
+      "auth_required": true,
+      "auth_type": "bearer",
+      "roles": [],
+      "request_schema": {},
+      "response_schema": {},
+      "code": null
+    },
+    {
+      "method": "POST",
+      "route": "/api/v1/analyze/generate-tests",
+      "linked_table": null,
+      "auth_required": true,
+      "auth_type": "bearer",
+      "roles": [],
+      "request_schema": {},
+      "response_schema": {},
+      "code": null
+    },
+    {
+      "method": "GET",
+      "route": "/api/v1/analyze/history/{qname}",
+      "linked_table": null,
+      "auth_required": true,
+      "auth_type": "bearer",
+      "roles": [],
+      "request_schema": {},
+      "response_schema": {},
+      "code": null
+    },
+    {
+      "method": "POST",
+      "route": "/api/v1/feedback/analysis",
+      "linked_table": null,
+      "auth_required": true,
+      "auth_type": "bearer",
+      "roles": [],
+      "request_schema": {},
+      "response_schema": {},
+      "code": null
+    },
+    {
+      "method": "POST",
+      "route": "/api/v1/feedback/incident",
+      "linked_table": null,
+      "auth_required": true,
+      "auth_type": "bearer",
+      "roles": [],
+      "request_schema": {},
+      "response_schema": {},
+      "code": null
+    },
+    {
+      "method": "GET",
+      "route": "/api/v1/graph/blast-radius",
+      "linked_table": null,
+      "auth_required": true,
+      "auth_type": "bearer",
+      "roles": [],
+      "request_schema": {},
+      "response_schema": {},
+      "code": null
+    },
+    {
+      "method": "GET",
+      "route": "/api/v1/health/codebase",
+      "linked_table": null,
+      "auth_required": true,
+      "auth_type": "bearer",
+      "roles": [],
+      "request_schema": {},
+      "response_schema": {},
+      "code": null
+    },
+    {
+      "method": "GET",
+      "route": "/api/v1/health/accuracy",
+      "linked_table": null,
+      "auth_required": true,
+      "auth_type": "bearer",
+      "roles": [],
+      "request_schema": {},
+      "response_schema": {},
+      "code": null
+    },
+    {
+      "method": "GET",
+      "route": "/api/v1/repos/{repo_id}/health",
+      "linked_table": null,
+      "auth_required": true,
+      "auth_type": "bearer",
+      "roles": [],
+      "request_schema": {},
+      "response_schema": {},
+      "code": null
+    },
+    {
+      "method": "GET",
+      "route": "/api/health",
+      "linked_table": null,
+      "auth_required": true,
+      "auth_type": "bearer",
+      "roles": [],
+      "request_schema": {},
+      "response_schema": {},
+      "code": null
+    },
+    {
+      "method": "POST",
+      "route": "/index/delta",
+      "linked_table": null,
+      "auth_required": true,
+      "auth_type": "bearer",
+      "roles": [],
+      "request_schema": {},
+      "response_schema": {},
+      "code": null
+    },
+    {
+      "method": "POST",
+      "route": "/api/v1/repos/",
+      "linked_table": null,
+      "auth_required": true,
+      "auth_type": "bearer",
+      "roles": [],
+      "request_schema": {},
+      "response_schema": {},
+      "code": null
+    },
+    {
+      "method": "POST",
+      "route": "/api/v1/repos/{repo_id}/index",
+      "linked_table": null,
+      "auth_required": true,
+      "auth_type": "bearer",
+      "roles": [],
+      "request_schema": {},
+      "response_schema": {},
+      "code": null
+    },
+    {
+      "method": "GET",
+      "route": "/api/v1/repos/{repo_id}/status",
+      "linked_table": null,
+      "auth_required": true,
+      "auth_type": "bearer",
+      "roles": [],
+      "request_schema": {},
+      "response_schema": {},
+      "code": null
+    },
+    {
+      "method": "GET",
+      "route": "/api/v1/symbols/search",
+      "linked_table": null,
+      "auth_required": true,
+      "auth_type": "bearer",
+      "roles": [],
+      "request_schema": {},
+      "response_schema": {},
+      "code": null
+    },
+    {
+      "method": "GET",
+      "route": "/api/v1/symbols/{chunk_id}",
+      "linked_table": null,
+      "auth_required": true,
+      "auth_type": "bearer",
+      "roles": [],
+      "request_schema": {},
+      "response_schema": {},
+      "code": null
+    },
+    {
+      "method": "POST",
+      "route": "/api/v1/webhooks/github",
+      "linked_table": null,
+      "auth_required": true,
+      "auth_type": "bearer",
+      "roles": [],
+      "request_schema": {},
+      "response_schema": {},
+      "code": null
+    },
+    {
+      "method": "POST",
+      "route": "/api/v1/webhooks/pagerduty",
+      "linked_table": null,
+      "auth_required": true,
+      "auth_type": "bearer",
+      "roles": [],
+      "request_schema": {},
+      "response_schema": {},
+      "code": null
+    },
+    {
+      "method": "GET",
+      "route": "/",
+      "linked_table": null,
+      "auth_required": true,
+      "auth_type": "bearer",
+      "roles": [],
+      "request_schema": {},
+      "response_schema": {},
+      "code": null
+    }
+  ],
+  "ui_components": [
+    {
+      "name": "Index Template",
+      "type": "template",
+      "route": "/",
+      "code": "<!doctype html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <link rel=\"icon\" type=\"image/svg+xml\" href=\"/favicon.svg\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <title>frontend</title>\n  </head>\n  <body>\n    <div id=\"root\"></div>\n    <script type=\"module\" src=\"/src/main.tsx\"></script>\n  </body>\n</html>\n"
+    },
+    {
+      "name": "AnalysisPanel",
+      "type": "component",
+      "route": "/",
+      "code": "import React from 'react';\nimport ReactMarkdown from 'react-markdown';\nimport { RiskBadge } from './RiskBadge';\nimport type { RiskTier } from './RiskBadge';\nimport { Terminal, AlertTriangle, CheckCircle2, Loader2 } from 'lucide-react';\n\ninterface TestGap {\n  chunk_id: string;\n  suggestion: string;\n}\n\ninterface AnalysisPanelProps {\n  status: string;\n  streamedText: string;\n  finalRiskTier?: RiskTier;\n  testGaps?: TestGap[];\n  requestId?: string;\n  symbolId?: string;\n}\n\nexport const AnalysisPanel = ({ status, streamedText, finalRiskTier, testGaps, requestId, symbolId }: AnalysisPanelProps) => {\n  const isLoading = status !== 'Complete' && status !== 'Ready' && status !== 'DISCONNECTED';\n  const [feedbackStatus, setFeedbackStatus] = React.useState<'idle' | 'submitted'>('idle');\n\n  const submitFeedback = async (isCorrect: boolean) => {\n    if (!requestId || !symbolId) return;\n\n    try {\n      await fetch(`${import.meta.env.VITE_API_URL}/api/v1/feedback/analysis`, {\n        method: 'POST',\n        headers: { 'Content-Type': 'application/json' },\n        body: JSON.stringify({\n          request_id: requestId,\n          symbol_id: symbolId,\n          is_correct: isCorrect,\n          comments: isCorrect ? 'Confirmed by user' : 'Flagged as false positive'\n        })\n      });\n      setFeedbackStatus('submitted');\n    } catch (err) {\n      console.error('Failed to submit feedback', err);\n    }\n  };\n\n  return (\n    <div className=\"glass-panel section-card\" style={{ minHeight: 420 }}>\n      <div className=\"section-header\">\n        <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>\n          <div style={{ padding: 10, borderRadius: 12, background: 'rgba(255,255,255,0.06)', border: '1px solid rgba(255,255,255,0.08)' }}>\n            <Terminal size={18} color=\"var(--accent-primary)\" />\n          </div>\n          <div>\n            <h3 className=\"section-title\" style={{ margin: 0, fontSize: 18 }}>Analysis Reasoning</h3>\n            <p className=\"section-subtitle\" style={{ margin: 0 }}>Review AI-guided reasoning for the selected symbol.</p>\n          </div>\n        </div>\n        <div style={{ display: 'flex', alignItems: 'center', gap: 14 }}>\n          <div className=\"status-chip\">\n            {isLoading ? (\n              <Loader2 size={14} className=\"animate-spin\" color=\"var(--accent-primary)\" />\n            ) : (\n              <CheckCircle2 size={14} color=\"var(--tier-low)\" />\n            )}\n            {status}\n          </div>\n          {finalRiskTier && <RiskBadge tier={finalRiskTier} />}\n        </div>\n      </div>\n\n      <div style={{ background: 'rgba(255,255,255,0.03)', borderRadius: 18, padding: 22, border: '1px solid rgba(255,255,255,0.08)', minHeight: 240, marginBottom: 26 }}>\n        <div className=\"markdown-body\" style={{ color: 'var(--text-secondary)', fontSize: 14, lineHeight: 1.8 }}>\n          <ReactMarkdown>{streamedText}</ReactMarkdown>\n        </div>\n      </div>\n\n      {status === 'Complete' && feedbackStatus === 'idle' && (\n        <div style={{ display: 'grid', gap: 14, padding: 20, background: 'rgba(255,255,255,0.03)', borderRadius: 18, border: '1px solid rgba(255,255,255,0.08)', marginBottom: 24 }}>\n          <span style={{ fontSize: 13, color: 'var(--text-secondary)' }}>Is this analysis accurate?</span>\n          <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap' }}>\n            <button\n              onClick={() => submitFeedback(true)}\n              className=\"btn-secondary\"\n              style={{ background: 'rgba(34, 197, 94, 0.12)', color: 'var(--tier-low)', borderColor: 'rgba(34, 197, 94, 0.2)' }}\n            >\n              <CheckCircle2 size={14} /> Yes, Correct\n            </button>\n            <button\n              onClick={() => submitFeedback(false)}\n              className=\"btn-secondary\"\n              style={{ background: 'rgba(239, 68, 68, 0.12)', color: 'var(--tier-critical)', borderColor: 'rgba(239, 68, 68, 0.2)' }}\n            >\n              <AlertTriangle size={14} /> False Positive\n            </button>\n          </div>\n        </div>\n      )}\n\n      {feedbackStatus === 'submitted' && (\n        <div style={{ padding: '16px 20px', background: 'rgba(34, 197, 94, 0.12)', borderRadius: 18, border: '1px solid rgba(82, 196, 26, 0.18)', marginBottom: 24, display: 'flex', alignItems: 'center', gap: 10, color: 'var(--tier-low)' }}>\n          <CheckCircle2 size={16} /> Thank you for your feedback! The system has been updated.\n        </div>\n      )}\n\n      {testGaps && testGaps.length > 0 && (\n        <div style={{ borderTop: '1px solid rgba(255,255,255,0.08)', paddingTop: 24 }}>\n          <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 16 }}>\n            <AlertTriangle size={18} color=\"var(--tier-high)\" />\n            <h4 style={{ margin: 0, fontSize: 15, color: 'var(--tier-high)', fontWeight: 600 }}>Recommended Test Coverage</h4>\n          </div>\n          <div style={{ display: 'grid', gap: 12 }}>\n            {testGaps.map((gap, i) => (\n              <div key={i} style={{ padding: 16, borderRadius: 16, background: 'rgba(255,255,255,0.03)', border: '1px solid rgba(255,255,255,0.08)', fontSize: 13, lineHeight: 1.7 }}>\n                <div style={{ marginBottom: 8 }}>\n                  <code style={{ color: 'var(--accent-primary)', background: 'rgba(56, 189, 248, 0.12)', padding: '4px 8px', borderRadius: 8, fontSize: 12, fontWeight: 700 }}>\n                    {gap.chunk_id}\n                  </code>\n                </div>\n                <div style={{ color: 'var(--text-secondary)' }}>{gap.suggestion}</div>\n              </div>\n            ))}\n          </div>\n        </div>\n      )}\n    </div>\n  );\n};\n"
+    },
+    {
+      "name": "CallGraphViewer",
+      "type": "component",
+      "route": "/",
+      "code": "import ReactFlow, { MiniMap, Controls, Background, Handle, Position } from 'reactflow';\nimport type { Node, Edge } from 'reactflow';\nimport 'reactflow/dist/style.css';\nimport { RiskBadge } from './RiskBadge';\nimport type { RiskTier } from './RiskBadge';\nimport { Activity, GitBranch, Zap } from 'lucide-react';\n\ninterface GraphNodeData {\n  label: string;\n  tier: RiskTier;\n  fanOut: number;\n}\n\nconst CustomNode = ({ data }: { data: GraphNodeData }) => (\n  <div className=\"custom-node\">\n    <Handle type=\"target\" position={Position.Top} style={{ background: 'var(--accent-primary)', border: 'none' }} />\n    <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 8 }}>\n      <div style={{ padding: 6, borderRadius: 6, background: 'var(--bg-primary)', border: '1px solid var(--border-color)' }}>\n        <Activity size={14} color=\"var(--accent-primary)\" />\n      </div>\n      <div style={{ fontWeight: '600', fontSize: 13, color: '#fff', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>\n        {data.label}\n      </div>\n    </div>\n    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginTop: 4 }}>\n      <RiskBadge tier={data.tier} />\n      <div style={{ display: 'flex', alignItems: 'center', gap: 4, fontSize: 11, color: 'var(--text-tertiary)' }}>\n        <GitBranch size={12} />\n        <span>{data.fanOut}</span>\n      </div>\n    </div>\n    <Handle type=\"source\" position={Position.Bottom} style={{ background: 'var(--accent-primary)', border: 'none' }} />\n  </div>\n);\n\nconst nodeTypes = {\n  custom: CustomNode,\n};\n\ninterface CallGraphViewerProps {\n  nodes: Node<GraphNodeData>[];\n  edges: Edge[];\n}\n\nexport const CallGraphViewer = ({ nodes, edges }: CallGraphViewerProps) => {\n  return (\n    <div style={{ height: '600px', width: '100%', position: 'relative' }} className=\"glass-panel\">\n      <ReactFlow\n        nodes={nodes}\n        edges={edges}\n        nodeTypes={nodeTypes}\n        fitView\n        defaultEdgeOptions={{\n          type: 'smoothstep',\n          animated: true,\n          style: { stroke: 'var(--border-color)', strokeWidth: 2 },\n        }}\n      >\n        <Background color=\"var(--border-color)\" gap={20} size={1} />\n        <Controls \n          style={{ \n            display: 'flex', \n            flexDirection: 'row', \n            bottom: 20, \n            left: 20, \n            background: 'var(--bg-tertiary)', \n            border: '1px solid var(--border-color)',\n            borderRadius: 8,\n            padding: 4\n          }} \n        />\n        <MiniMap \n          nodeColor={(n: any) => {\n            if (n.data?.tier === 'CRITICAL') return '#ff4d4f';\n            if (n.data?.tier === 'HIGH') return '#faad14';\n            return '#0c0c0c';\n          }} \n          maskColor=\"rgba(0,0,0,0.7)\"\n          style={{ background: 'var(--bg-tertiary)', border: '1px solid var(--border-color)', borderRadius: 12 }}\n        />\n      </ReactFlow>\n      <div style={{ position: 'absolute', top: 20, right: 20, zIndex: 10, display: 'flex', gap: 12 }}>\n        <div className=\"glass-panel\" style={{ padding: '8px 12px', fontSize: 12, display: 'flex', alignItems: 'center', gap: 8 }}>\n          <Zap size={14} color=\"var(--tier-critical)\" className=\"animate-pulse-slow\" />\n          <span style={{ fontWeight: 600 }}>Impact Map Active</span>\n        </div>\n      </div>\n    </div>\n  );\n};\n"
+    },
+    {
+      "name": "CodeBlock",
+      "type": "component",
+      "route": "/",
+      "code": "\n\ninterface CodeBlockProps {\n  code: string;\n  language?: string;\n  className?: string;\n}\n\nexport const CodeBlock: React.FC<CodeBlockProps> = ({ code, className = '' }) => {\n  return (\n    <pre className={`code-block ${className}`}>\n      <code>{code}</code>\n    </pre>\n  );\n};\n"
+    },
+    {
+      "name": "ImpactMetrics",
+      "type": "component",
+      "route": "/",
+      "code": "import { PieChart, Pie, Cell, ResponsiveContainer, BarChart, Bar, XAxis, YAxis, Tooltip } from 'recharts';\n\ninterface ImpactMetricsProps {\n  data: {\n    name: string;\n    value: number;\n    color: string;\n  }[];\n  riskDistribution: {\n    tier: string;\n    count: number;\n    impact: number;\n  }[];\n}\n\nexport const ImpactMetrics = ({ data, riskDistribution }: ImpactMetricsProps) => {\n  return (\n    <div className=\"glass-panel section-card\" style={{ display: 'flex', flexDirection: 'column', gap: 32 }}>\n      <div>\n        <h3 className=\"section-title\" style={{ marginBottom: 20, fontSize: 16, color: 'var(--text-secondary)' }}>Risk Distribution</h3>\n        <div style={{ height: 220, width: '100%' }}>\n          <ResponsiveContainer width=\"100%\" height=\"100%\">\n            <PieChart>\n              <Pie\n                data={data}\n                innerRadius={60}\n                outerRadius={84}\n                paddingAngle={6}\n                dataKey=\"value\"\n              >\n                {data.map((entry, index) => (\n                  <Cell key={`cell-${index}`} fill={entry.color} stroke=\"none\" />\n                ))}\n              </Pie>\n              <Tooltip\n                cursor={{ fill: 'transparent' }}\n                contentStyle={{ background: 'var(--bg-tertiary)', border: '1px solid var(--border-color)', borderRadius: 12 }}\n                itemStyle={{ color: '#fff' }}\n              />\n            </PieChart>\n          </ResponsiveContainer>\n        </div>\n        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, minmax(0, 1fr))', gap: 12, marginTop: 18 }}>\n          {data.map((item) => (\n            <div key={item.name} style={{ display: 'flex', alignItems: 'center', gap: 10 }}>\n              <div style={{ width: 10, height: 10, borderRadius: '50%', background: item.color }} />\n              <span style={{ fontSize: 13, color: 'var(--text-secondary)' }}>{item.name}: {item.value}</span>\n            </div>\n          ))}\n        </div>\n      </div>\n\n      <div>\n        <h3 className=\"section-title\" style={{ marginBottom: 20, fontSize: 16, color: 'var(--text-secondary)' }}>Fan-Out Impact Score</h3>\n        <div style={{ height: 220, width: '100%' }}>\n          <ResponsiveContainer width=\"100%\" height=\"100%\">\n            <BarChart data={riskDistribution}>\n              <XAxis dataKey=\"tier\" stroke=\"var(--text-tertiary)\" fontSize={12} tickLine={false} axisLine={false} />\n              <YAxis stroke=\"var(--text-tertiary)\" fontSize={12} tickLine={false} axisLine={false} />\n              <Tooltip\n                cursor={{ fill: 'var(--bg-secondary)' }}\n                contentStyle={{ background: 'var(--bg-tertiary)', border: '1px solid var(--border-color)', borderRadius: 12 }}\n              />\n              <Bar dataKey=\"impact\" radius={[4, 4, 0, 0]}>\n                {riskDistribution.map((entry, index) => (\n                  <Cell key={`cell-${index}`} fill={\n                    entry.tier === 'Critical' ? '#ff4d4f' :\n                    entry.tier === 'High' ? '#faad14' :\n                    entry.tier === 'Medium' ? '#1890ff' :\n                    '#52c41a'\n                  } />\n                ))}\n              </Bar>\n            </BarChart>\n          </ResponsiveContainer>\n        </div>\n      </div>\n    </div>\n  );\n};\n"
+    },
+    {
+      "name": "SearchInput",
+      "type": "component",
+      "route": "/",
+      "code": "import React, { useState, useEffect, useRef } from 'react';\nimport { Search } from 'lucide-react';\n\ninterface SearchInputProps {\n  value: string;\n  onChange: (v: string) => void;\n  placeholder?: string;\n  suggestions?: string[];\n  className?: string;\n}\n\nexport const SearchInput: React.FC<SearchInputProps> = ({ value, onChange, placeholder = 'Search...', suggestions = [], className = '' }) => {\n  const [open, setOpen] = useState(false);\n  const [filtered, setFiltered] = useState<string[]>([]);\n  const ref = useRef<HTMLDivElement | null>(null);\n\n  useEffect(() => {\n    setFiltered(suggestions.filter(s => s.toLowerCase().includes(value.toLowerCase())));\n  }, [value, suggestions]);\n\n  useEffect(() => {\n    const onDoc = (e: MouseEvent) => {\n      if (ref.current && !ref.current.contains(e.target as Node)) setOpen(false);\n    };\n    document.addEventListener('click', onDoc);\n    return () => document.removeEventListener('click', onDoc);\n  }, []);\n\n  return (\n    <div ref={ref} style={{ position: 'relative' }}>\n      <div style={{ position: 'absolute', left: 12, top: '50%', transform: 'translateY(-50%)' }}>\n        <Search size={16} color=\"var(--text-tertiary)\" />\n      </div>\n      <input\n        type=\"text\"\n        value={value}\n        onChange={e => { onChange(e.target.value); setOpen(true); }}\n        placeholder={placeholder}\n        className={`input-field ${className}`}\n        onFocus={() => setOpen(true)}\n      />\n\n      {open && filtered.length > 0 && (\n        <div style={{ position: 'absolute', top: 'calc(100% + 8px)', right: 0, width: '100%', background: 'var(--bg-tertiary)', border: '1px solid var(--border-color)', borderRadius: 8, padding: 8, zIndex: 1200 }}>\n          {filtered.slice(0, 6).map((s, idx) => (\n            <div key={idx} onClick={() => { onChange(s); setOpen(false); }} style={{ padding: '8px', cursor: 'pointer', borderRadius: 6, color: 'var(--text-primary)' }}>\n              {s}\n            </div>\n          ))}\n        </div>\n      )}\n    </div>\n  );\n};\n\nexport default SearchInput;\n"
+    },
+    {
+      "name": "LoadingSpinner",
+      "type": "component",
+      "route": "/",
+      "code": "import React from 'react';\n\nexport const LoadingSpinner: React.FC<{ size?: number, inline?: boolean }> = ({ size = 20, inline = false }) => {\n  const style: React.CSSProperties = {\n    width: size,\n    height: size,\n    borderRadius: '50%',\n    border: '2px solid rgba(255,255,255,0.08)',\n    borderTop: `2px solid var(--color-primary)`,\n    animation: 'spin 1s linear infinite',\n    display: inline ? 'inline-block' : 'block'\n  };\n\n  return <div style={style} aria-hidden=\"true\" />;\n};\n\nexport default LoadingSpinner;\n"
+    },
+    {
+      "name": "Skeleton",
+      "type": "component",
+      "route": "/",
+      "code": "import React from 'react';\n\ninterface SkeletonProps {\n  width?: string | number;\n  height?: string | number;\n  circle?: boolean;\n  className?: string;\n  style?: React.CSSProperties;\n}\n\nexport const Skeleton: React.FC<SkeletonProps> = ({\n  width = '100%',\n  height = '16px',\n  circle = false,\n  className = '',\n  style = {}\n}) => {\n  return (\n    <div\n      className={`skeleton ${className}`}\n      style={{\n        width,\n        height,\n        borderRadius: circle ? '50%' : 'var(--radius-md)',\n        ...style\n      }}\n    />\n  );\n};\n\ninterface SkeletonItemProps {\n  count?: number;\n  spacing?: string;\n}\n\nexport const SkeletonLine: React.FC<SkeletonItemProps> = ({ count = 3, spacing = 'var(--space-md)' }) => {\n  return (\n    <>\n      {Array.from({ length: count }).map((_, i) => (\n        <Skeleton key={i} height=\"16px\" style={{ marginBottom: i < count - 1 ? spacing : 0 }} />\n      ))}\n    </>\n  );\n};\n\nexport const SkeletonCard: React.FC<{ className?: string }> = ({ className = '' }) => {\n  return (\n    <div\n      className={`glass-panel ${className}`}\n      style={{\n        padding: 'var(--space-md)',\n        display: 'flex',\n        flexDirection: 'column',\n        gap: 'var(--space-md)'\n      }}\n    >\n      <Skeleton height=\"24px\" width=\"60%\" />\n      <SkeletonLine count={3} />\n      <Skeleton height=\"40px\" width=\"30%\" />\n    </div>\n  );\n};\n"
+    },
+    {
+      "name": "RepoIndexer",
+      "type": "component",
+      "route": "/",
+      "code": "import React, { useState } from 'react';\nimport { apiClient } from '../api/client';\nimport { Database, Loader2, CheckCircle2, AlertCircle } from 'lucide-react';\n\ninterface RepoIndexerProps {\n  onSuccess: (repoId: string) => void;\n}\n\nexport const RepoIndexer: React.FC<RepoIndexerProps> = ({ onSuccess }) => {\n  const [url, setUrl] = useState('');\n  const [repoId, setRepoId] = useState('');\n  const [status, setStatus] = useState<'idle' | 'indexing' | 'success' | 'error'>('idle');\n  const [errorMsg, setErrorMsg] = useState('');\n\n  const handleUrlChange = (e: React.ChangeEvent<HTMLInputElement>) => {\n    const newUrl = e.target.value;\n    setUrl(newUrl);\n\n    if (newUrl.includes('github.com')) {\n      const parts = newUrl.split('/');\n      if (parts.length > 4) {\n        setRepoId(parts[parts.length - 1].replace('.git', ''));\n      }\n    }\n  };\n\n  const handleIndex = async () => {\n    if (!url || !repoId) return;\n\n    setStatus('indexing');\n    setErrorMsg('');\n\n    try {\n      await apiClient.repos.index(repoId, { repo_id: repoId, url });\n      setStatus('success');\n      setTimeout(() => {\n        onSuccess(repoId);\n        setStatus('idle');\n        setUrl('');\n      }, 3000);\n    } catch (err: any) {\n      setStatus('error');\n      setErrorMsg(err.message || 'Failed to start indexing');\n    }\n  };\n\n  return (\n    <div className=\"glass-panel section-card\" style={{ marginBottom: '32px' }}>\n      <div className=\"section-header\">\n        <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>\n          <div style={{ padding: '10px', borderRadius: '12px', background: 'rgba(255, 255, 255, 0.08)' }}>\n            <Database size={20} color=\"#fff\" />\n          </div>\n          <div>\n            <h3 className=\"section-title\" style={{ margin: 0, fontSize: 18 }}>Index New Repository</h3>\n          </div>\n        </div>\n      </div>\n\n      <p style={{ color: 'var(--text-secondary)', fontSize: 14, margin: '0 0 22px' }}>\n        Paste a public GitHub URL to clone, AST parse, and vectorize its codebase into Sentinel AI.\n      </p>\n\n      <div className=\"control-grid\">\n        <div>\n          <label className=\"input-label\">GitHub repository URL</label>\n          <input\n            type=\"text\"\n            placeholder=\"https://github.com/username/repo\"\n            value={url}\n            onChange={handleUrlChange}\n            disabled={status === 'indexing' || status === 'success'}\n            className=\"input-field\"\n          />\n        </div>\n\n        <div>\n          <label className=\"input-label\">Repository ID</label>\n          <input\n            type=\"text\"\n            placeholder=\"repo-id\"\n            value={repoId}\n            onChange={(e) => setRepoId(e.target.value)}\n            disabled={status === 'indexing' || status === 'success'}\n            className=\"input-field\"\n          />\n        </div>\n\n        <button\n          onClick={handleIndex}\n          disabled={!url || !repoId || status === 'indexing' || status === 'success'}\n          className=\"btn-primary\"\n          style={{ justifyContent: 'center' }}\n        >\n          {status === 'indexing' ? (\n            <>\n              <Loader2 size={18} className=\"animate-spin\" />\n              Indexing...\n            </>\n          ) : status === 'success' ? (\n            <>\n              <CheckCircle2 size={18} /> Queued!\n            </>\n          ) : status === 'error' ? (\n            <>Retry</>\n          ) : (\n            <>Index Repo</>\n          )}\n        </button>\n      </div>\n\n      {status === 'indexing' && (\n        <div style={{ marginTop: '18px', color: 'var(--text-secondary)', fontSize: 13, display: 'flex', alignItems: 'center', gap: 8 }}>\n          <span className=\"feature-pill\" style={{ padding: '8px' }} />\n          Repository is being cloned and indexed. This may take a few minutes.\n        </div>\n      )}\n\n      {status === 'error' && (\n        <div style={{ marginTop: '18px', padding: '14px', background: 'var(--tier-high-bg)', color: 'var(--tier-high)', borderRadius: 12, border: '1px solid var(--tier-high-border)', display: 'flex', alignItems: 'center', gap: 10, fontSize: 14 }}>\n          <AlertCircle size={16} />\n          {errorMsg}\n        </div>\n      )}\n    </div>\n  );\n};\n"
+    },
+    {
+      "name": "RiskBadge",
+      "type": "component",
+      "route": "/",
+      "code": "\n\nexport type RiskTier = 'CRITICAL' | 'HIGH' | 'MEDIUM' | 'LOW';\n\ninterface RiskBadgeProps {\n  tier: RiskTier;\n  className?: string;\n}\n\nexport const RiskBadge: React.FC<RiskBadgeProps> = ({ tier, className = '' }) => {\n  return (\n    <span className={`risk-badge ${tier} ${className}`}>\n      {tier}\n    </span>\n  );\n};\n"
+    },
+    {
+      "name": "Toast",
+      "type": "component",
+      "route": "/",
+      "code": "import React from 'react';\nimport { motion } from 'framer-motion';\nimport { X, CheckCircle, AlertCircle, AlertTriangle, Info } from 'lucide-react';\nimport type { Toast as ToastDef, ToastType } from '../../context/NotificationContext';\n\ninterface ToastProps {\n  toast: ToastDef;\n  onClose: (id: string) => void;\n}\n\nconst getToastConfig = (type: ToastType) => {\n  const configs = {\n    success: {\n      bg: 'rgba(16, 185, 129, 0.1)',\n      border: 'rgba(16, 185, 129, 0.3)',\n      icon: CheckCircle,\n      color: '#10b981'\n    },\n    error: {\n      bg: 'rgba(239, 68, 68, 0.1)',\n      border: 'rgba(239, 68, 68, 0.3)',\n      icon: AlertCircle,\n      color: '#ef4444'\n    },\n    warning: {\n      bg: 'rgba(245, 158, 11, 0.1)',\n      border: 'rgba(245, 158, 11, 0.3)',\n      icon: AlertTriangle,\n      color: '#f59e0b'\n    },\n    info: {\n      bg: 'rgba(59, 130, 246, 0.1)',\n      border: 'rgba(59, 130, 246, 0.3)',\n      icon: Info,\n      color: '#3b82f6'\n    }\n  };\n  return configs[type];\n};\n\nexport const ToastItem: React.FC<ToastProps> = ({ toast, onClose }) => {\n  const config = getToastConfig(toast.type);\n  const Icon = config.icon;\n\n  return (\n    <motion.div\n      initial={{ opacity: 0, y: -20, x: 20 }}\n      animate={{ opacity: 1, y: 0, x: 0 }}\n      exit={{ opacity: 0, y: -20, x: 20 }}\n      transition={{ duration: 0.3 }}\n      style={{\n        background: config.bg,\n        borderColor: config.border,\n        borderWidth: '1px',\n        borderRadius: 'var(--radius-md)',\n        padding: 'var(--space-md)',\n        display: 'flex',\n        alignItems: 'center',\n        gap: 'var(--space-md)',\n        boxShadow: 'var(--shadow-md)',\n        maxWidth: '400px'\n      }}\n    >\n      <Icon size={20} color={config.color} style={{ flexShrink: 0 }} />\n      <span style={{ color: 'var(--text-primary)', fontSize: '14px', flex: 1 }}>\n        {toast.message}\n      </span>\n      <button\n        onClick={() => onClose(toast.id)}\n        style={{\n          background: 'none',\n          border: 'none',\n          cursor: 'pointer',\n          color: 'var(--text-tertiary)',\n          padding: 0,\n          display: 'flex',\n          alignItems: 'center',\n          transition: 'color var(--duration-200) var(--timing-in-out)'\n        }}\n        onMouseEnter={e => e.currentTarget.style.color = config.color}\n        onMouseLeave={e => e.currentTarget.style.color = 'var(--text-tertiary)'}\n      >\n        <X size={16} />\n      </button>\n    </motion.div>\n  );\n};\n\nexport default ToastItem;\n"
+    },
+    {
+      "name": "ToastProvider",
+      "type": "component",
+      "route": "/",
+      "code": "import React, { useContext } from 'react';\nimport { AnimatePresence } from 'framer-motion';\nimport ToastItem from './Toast';\nimport { NotificationContext } from '../../context/NotificationContext';\n\nexport const ToastProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {\n  const context = useContext(NotificationContext);\n\n  if (!context) {\n    return <>{children}</>;\n  }\n\n  const { toasts, removeToast } = context;\n\n  return (\n    <>\n      {children}\n      <div\n        style={{\n          position: 'fixed',\n          top: 'var(--space-lg)',\n          right: 'var(--space-lg)',\n          zIndex: 'var(--z-tooltip)',\n          display: 'flex',\n          flexDirection: 'column',\n          gap: 'var(--space-md)',\n          pointerEvents: 'none'\n        }}\n      >\n        <AnimatePresence mode=\"popLayout\">\n          {toasts.map(toast => (\n            <div key={toast.id} style={{ pointerEvents: 'auto' }}>\n              <ToastItem toast={toast} onClose={removeToast} />\n            </div>\n          ))}\n        </AnimatePresence>\n      </div>\n    </>\n  );\n};\n"
+    },
+    {
+      "name": "Dashboard View",
+      "type": "page",
+      "route": "/Dashboard",
+      "code": "import { useState, useEffect } from 'react';\nimport { useAnalysis } from '../hooks/useAnalysis';\nimport { CallGraphViewer } from '../components/CallGraphViewer';\nimport { AnalysisPanel } from '../components/AnalysisPanel';\nimport { ImpactMetrics } from '../components/ImpactMetrics';\nimport { RepoIndexer } from '../components/RepoIndexer';\nimport { SearchInput } from '../components/Input/SearchInput';\nimport type { RiskTier } from '../components/RiskBadge';\nimport { Shield, Zap, Info, Database, Activity, Server, Box, Sparkles } from 'lucide-react';\nimport { useNotification } from '../hooks/useNotification';\nimport LoadingSpinner from '../components/Loading/LoadingSpinner';\nimport { SkeletonCard } from '../components/Loading/Skeleton';\n\nexport const Dashboard = () => {\n  const [query, setQuery] = useState('calculate_impact');\n  const [repoId, setRepoId] = useState('core-api');\n  const { state, triggerAnalysis } = useAnalysis();\n  const notify = useNotification();\n  const [systemHealth, setSystemHealth] = useState<any>(null);\n\n  const suggestions = ['calculate_impact', 'resolve_dependency', 'refresh_pipeline', 'validate_schema', 'load_config'];\n\n  useEffect(() => {\n    fetch('/api/v1/health/codebase')\n      .then(res => res.json())\n      .then(data => setSystemHealth(data))\n      .catch(err => console.error('Failed to fetch health:', err));\n  }, []);\n\n  const handleAnalyze = async () => {\n    notify.info('Analysis started', 3000);\n    await triggerAnalysis({\n      chunk: {\n        chunk_id: 'mock1',\n        repo_id: repoId,\n        file_path: 'utils.py',\n        symbol_type: 'func',\n        symbol_name: query || 'mock',\n        qualified_name: query || 'mock',\n        start_line: 1,\n        end_line: 10,\n        signature: 'def mock()',\n        content: 'pass',\n        language: 'python'\n      },\n      change_summary: 'Modified logic'\n    });\n\n    if (state.status === 'running' || state.status === 'queued') {\n      notify.info('Analysis queued', 2500);\n    } else if (state.status === 'complete') {\n      notify.success('Analysis complete', 3000);\n    }\n  };\n\n  const finalRiskTier = state.validation?.risk_tier as RiskTier | undefined;\n  const testGaps = state.validation?.test_gap_suggestions || [];\n  const panelStatus = state.status === 'running' ? state.currentStep : (state.status === 'complete' ? 'Complete' : state.status);\n  const streamedText = state.streamedText;\n  const hasRealGraph = state.graphData?.nodes?.length && state.graphData.nodes.length > 0;\n  const displayNodes = hasRealGraph ? state.graphData!.nodes : [];\n  const displayEdges = hasRealGraph ? state.graphData!.edges : [];\n  const hasRealMetrics = state.result != null;\n  const nodeCount = hasRealGraph ? displayNodes.length : 0;\n  const edgeCount = hasRealGraph ? displayEdges.length : 0;\n\n  let chartData: any[] = [];\n  let riskDist: any[] = [];\n\n  if (hasRealMetrics && state.result?.metrics) {\n    // populate real metrics when available\n  }\n\n  return (\n    <div className=\"app-container\">\n      <header className=\"app-header\">\n        <div className=\"brand\">\n          <div className=\"brand-row\">\n            <div className=\"brand-badge\">\n              <Shield size={24} color=\"#fff\" />\n            </div>\n            <div>\n              <h1>Sentinel AI</h1>\n              <p>Real-time dependency impact and risk analysis for modern engineering teams.</p>\n            </div>\n          </div>\n        </div>\n\n        <div className=\"hero-card\">\n          <div className=\"section-header\">\n            <div>\n              <h2 className=\"hero-title\">Launch smarter impact scans</h2>\n              <p className=\"hero-subtitle\">Use adaptive repository indexing and symbol-level analysis to identify high-risk dependency changes before they reach production.</p>\n            </div>\n            <span className=\"feature-pill\">\n              <Sparkles size={16} /> Laptop-optimized layout\n            </span>\n          </div>\n\n          <div className=\"hero-stats\">\n            <div className=\"hero-stat\">\n              <strong>{repoId}</strong>\n              <span>Repository in focus</span>\n            </div>\n            <div className=\"hero-stat\">\n              <strong>{query}</strong>\n              <span>Current analysis target</span>\n            </div>\n            <div className=\"hero-stat\">\n              <strong>{state.status?.toUpperCase() || 'IDLE'}</strong>\n              <span>Pipeline state</span>\n            </div>\n            <div className=\"hero-stat\">\n              <strong>{nodeCount} / {edgeCount}</strong>\n              <span>Graph nodes / edges</span>\n            </div>\n          </div>\n        </div>\n      </header>\n\n      <div className=\"control-panel\">\n        <div className=\"section-header\">\n          <div>\n            <h3 className=\"section-title\">Analyze faster</h3>\n            <p className=\"section-subtitle\">Type a symbol and repo ID, then trigger a targeted impact scan.</p>\n          </div>\n          <span className=\"status-chip\">Live preview</span>\n        </div>\n\n        <div className=\"control-grid\">\n          <div>\n            <label className=\"input-label\">Repository ID</label>\n            <input\n              type=\"text\"\n              value={repoId}\n              onChange={e => setRepoId(e.target.value)}\n              placeholder=\"core-api\"\n              className=\"input-field\"\n            />\n          </div>\n\n          <div>\n            <label className=\"input-label\">Symbol or function</label>\n            <SearchInput\n              value={query}\n              onChange={setQuery}\n              placeholder=\"Search symbol...\"\n              suggestions={suggestions}\n              className=\"input-field\"\n            />\n          </div>\n\n          <button\n            className=\"btn-primary\"\n            onClick={handleAnalyze}\n            disabled={state.status === 'queued' || state.status === 'running'}\n          >\n            {state.status === 'running' ? (\n              <>\n                <LoadingSpinner size={16} inline />\n                <span>Analyzing... {state.progress ?? 0}%</span>\n              </>\n            ) : (\n              <>\n                <Zap size={16} /> Analyze impact\n              </>\n            )}\n          </button>\n        </div>\n      </div>\n\n      <RepoIndexer onSuccess={(id) => setRepoId(id)} />\n\n      <section className=\"dashboard-grid\">\n        <div className=\"dashboard-main\">\n          <section className=\"section-card\">\n            <div className=\"section-header\">\n              <div>\n                <h2 className=\"section-title\">Call Graph Blast Radius</h2>\n                <p className=\"section-subtitle\">Interactive dependency graph showing affected code across the repository.</p>\n              </div>\n              {hasRealGraph && <span className=\"status-chip\">Interactive</span>}\n            </div>\n\n            {hasRealGraph ? (\n              <CallGraphViewer nodes={displayNodes as any} edges={displayEdges} />\n            ) : (\n              <div className=\"glass-panel\" style={{ minHeight: 420, display: 'flex', alignItems: 'center', justifyContent: 'center', flexDirection: 'column', gap: 18 }}>\n                <Sparkles size={48} color=\"var(--text-tertiary)\" />\n                <p style={{ color: 'var(--text-secondary)', maxWidth: 420, textAlign: 'center' }}>Run an analysis to populate the blast radius graph and inspect how changes affect code dependencies.</p>\n                <SkeletonCard />\n              </div>\n            )}\n          </section>\n\n          <section className=\"section-card\">\n            <div className=\"section-header\">\n              <div>\n                <h2 className=\"section-title\">Impact Analysis Results</h2>\n                <p className=\"section-subtitle\">AI-driven risk summaries, tests gaps, and source recommendations.</p>\n              </div>\n              <Info size={20} color=\"var(--text-secondary)\" />\n            </div>\n\n            <AnalysisPanel\n              status={panelStatus}\n              streamedText={streamedText || 'Initiate analysis to see real-time AI reasoning...'}\n              finalRiskTier={finalRiskTier}\n              testGaps={testGaps}\n              requestId={state.requestId || undefined}\n              symbolId={query || 'mock'}\n            />\n\n            {state.status === 'error' && (\n              <div className=\"panel-card\" style={{ marginTop: 20, background: 'var(--tier-high-bg)', color: 'var(--tier-high)', border: '1px solid var(--tier-high-border)' }}>\n                <strong>Error:</strong> {state.error}\n              </div>\n            )}\n          </section>\n        </div>\n\n        <aside className=\"dashboard-side\">\n          <section className=\"section-card\">\n            <div className=\"section-header\">\n              <div>\n                <h2 className=\"section-title\">Metrics Overview</h2>\n                <p className=\"section-subtitle\">Summary charts that highlight risk distribution and fan-out impact.</p>\n              </div>\n            </div>\n\n            {hasRealMetrics ? (\n              <ImpactMetrics data={chartData} riskDistribution={riskDist} />\n            ) : (\n              <div className=\"glass-panel\" style={{ padding: 32, textAlign: 'center', color: 'var(--text-secondary)' }}>\n                Analysis required to compute metrics\n              </div>\n            )}\n          </section>\n\n          <section className=\"health-card\">\n            <div className=\"section-header\">\n              <div>\n                <h2 className=\"section-title\">System Health</h2>\n                <p className=\"section-subtitle\">Live status for platform services and processing nodes.</p>\n              </div>\n            </div>\n\n            {systemHealth ? (\n              <div>\n                <div className=\"health-line\">\n                  <span className=\"health-text\"><Database size={14} /> Neo4j</span>\n                  <span className={systemHealth.checks?.neo4j?.status === 'ok' ? 'status-ok' : 'status-fail'}>{systemHealth.checks?.neo4j?.status?.toUpperCase() || 'UNKNOWN'}</span>\n                </div>\n                <div className=\"health-line\">\n                  <span className=\"health-text\"><Box size={14} /> Qdrant Vector</span>\n                  <span className={systemHealth.checks?.qdrant?.status === 'ok' ? 'status-ok' : 'status-fail'}>{systemHealth.checks?.qdrant?.status?.toUpperCase() || 'UNKNOWN'}</span>\n                </div>\n                <div className=\"health-line\">\n                  <span className=\"health-text\"><Server size={14} /> Redis / Celery</span>\n                  <span className={systemHealth.broker_connected ? 'status-ok' : 'status-fail'}>{systemHealth.broker_connected ? 'OK' : 'OFFLINE'}</span>\n                </div>\n                <div className=\"health-line\">\n                  <span className=\"health-text\"><Activity size={14} /> Workers</span>\n                  <span className={systemHealth.worker_online ? 'status-ok' : 'status-fail'}>{systemHealth.worker_online ? `ONLINE (${systemHealth.checks?.worker?.count})` : 'UNAVAILABLE'}</span>\n                </div>\n              </div>\n            ) : (\n              <div style={{ color: 'var(--text-secondary)', fontSize: 13 }}>Loading health metrics...</div>\n            )}\n          </section>\n        </aside>\n      </section>\n    </div>\n  );\n};\n"
+    },
+    {
+      "name": "Debugpage View",
+      "type": "page",
+      "route": "/DebugPage",
+      "code": "import { useState, useEffect } from \"react\";\n\nexport function DebugPage() {\n  const [brokerStatus, setBrokerStatus] = useState<\"checking\" | \"ok\" | \"error\">(\"checking\");\n  const [wsStatus, setWsStatus] = useState<\"idle\" | \"connected\" | \"error\">(\"idle\");\n  const [events, setEvents] = useState<string[]>([]);\n\n  useEffect(() => {\n    fetch(\"/api/v1/analyze/health\")\n      .then(r => r.json())\n      .then(d => setBrokerStatus(d.broker_connected ? \"ok\" : \"error\"))\n      .catch(() => setBrokerStatus(\"error\"));\n  }, []);\n\n  const testWebSocket = () => {\n    const ws = new WebSocket(`${import.meta.env.VITE_API_URL?.replace(\"http\", \"ws\") || \"ws://localhost:8000\"}/ws/analyze/test-task?token=${import.meta.env.VITE_DEV_TOKEN || \"dev-local-token\"}`);\n    ws.onopen = () => setWsStatus(\"connected\");\n    ws.onerror = () => setWsStatus(\"error\");\n    ws.onmessage = (e) => setEvents(prev => [...prev.slice(-19), e.data]);\n  };\n\n  return (\n    <div style={{ padding: \"2rem\", fontFamily: \"monospace\" }}>\n      <h2>Connection Debugger</h2>\n      <p>Broker: <strong>{brokerStatus}</strong></p>\n      <p>WebSocket: <strong>{wsStatus}</strong></p>\n      <button onClick={testWebSocket}>Test WebSocket</button>\n      <pre>{events.join(\"\\n\")}</pre>\n    </div>\n  );\n}\n"
+    }
+  ],
+  "features": [
+    {
+      "id": 6,
+      "name": "Health Feature",
+      "status": "planned",
+      "description": "Auto-discovered feature from repository API routes."
+    },
+    {
+      "id": 7,
+      "name": "Index Feature",
+      "status": "planned",
+      "description": "Auto-discovered feature from repository API routes."
+    },
+    {
+      "id": 8,
+      "name": "V1 Feature",
+      "status": "planned",
+      "description": "Auto-discovered feature from repository API routes."
+    }
+  ],
+  "prompts": []
+}
