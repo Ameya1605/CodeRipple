@@ -320,6 +320,12 @@
       "type": "page",
       "route": "/DebugPage",
       "code": "import { useState, useEffect } from \"react\";\n\nexport function DebugPage() {\n  const [brokerStatus, setBrokerStatus] = useState<\"checking\" | \"ok\" | \"error\">(\"checking\");\n  const [wsStatus, setWsStatus] = useState<\"idle\" | \"connected\" | \"error\">(\"idle\");\n  const [events, setEvents] = useState<string[]>([]);\n\n  useEffect(() => {\n    fetch(\"/api/v1/analyze/health\")\n      .then(r => r.json())\n      .then(d => setBrokerStatus(d.broker_connected ? \"ok\" : \"error\"))\n      .catch(() => setBrokerStatus(\"error\"));\n  }, []);\n\n  const testWebSocket = () => {\n    const ws = new WebSocket(`${import.meta.env.VITE_API_URL?.replace(\"http\", \"ws\") || \"ws://localhost:8000\"}/ws/analyze/test-task?token=${import.meta.env.VITE_DEV_TOKEN || \"dev-local-token\"}`);\n    ws.onopen = () => setWsStatus(\"connected\");\n    ws.onerror = () => setWsStatus(\"error\");\n    ws.onmessage = (e) => setEvents(prev => [...prev.slice(-19), e.data]);\n  };\n\n  return (\n    <div style={{ padding: \"2rem\", fontFamily: \"monospace\" }}>\n      <h2>Connection Debugger</h2>\n      <p>Broker: <strong>{brokerStatus}</strong></p>\n      <p>WebSocket: <strong>{wsStatus}</strong></p>\n      <button onClick={testWebSocket}>Test WebSocket</button>\n      <pre>{events.join(\"\\n\")}</pre>\n    </div>\n  );\n}\n"
+    },
+    {
+      "name": "Health Feature",
+      "type": "page",
+      "route": null,
+      "code": null
     }
   ],
   "features": [
